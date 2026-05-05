@@ -1,0 +1,9 @@
+===== ANÁLISIS ESTRUCTURAL =====
+Nodos:            1088092
+Aristas:          1541898
+Grado promedio:   2.83413
+Nodo mayor grado: indice=683267 grado=9
+Diametro aprox:   592
+Nodos alcanzados: 1087562
+Componentes:      206
+Mayor componente: 1087562
