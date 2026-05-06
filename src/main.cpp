@@ -1,12 +1,14 @@
 #include <iostream>
+#include <windows.h>
 #include "graph.hpp"
 using namespace std;
 
 int main(int argc, char* argv[]) {
+    SetConsoleOutputCP(CP_UTF8);
 
     if (argc < 2) {
         cout << "Uso: ./eda_pf <modulo>" << endl;
-        cout << "  A → análisis estructural" << endl;
+        cout << "  A → analisis estructural" << endl;
         cout << "  B → consultas Dijkstra" << endl;
         cout << "  C → subgrafo y MST" << endl;
         return 1;
