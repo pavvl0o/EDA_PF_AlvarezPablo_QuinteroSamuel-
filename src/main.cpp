@@ -24,10 +24,12 @@ int main(int argc, char* argv[]) {
     string modulo = argv[1];
 
     if (modulo == "A") {
-        analisisEstructural(g);
-    } else {
-        cout << "Módulo " << modulo << " próximamente..." << endl;
-    }
+    analisisEstructural(g);
+      } else if (modulo == "B") {
+    runQueries(g);
+      } else {
+    cout << "Modulo " << modulo << " proximamente..." << endl;
+      }
 
     return 0;
 }

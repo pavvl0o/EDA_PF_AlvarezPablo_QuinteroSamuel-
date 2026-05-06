@@ -14,7 +14,15 @@ struct Grafo {
 };
 
 void cargarGrafo(const string& archivo, Grafo& g);
+
+int bfs(int inicio, int destino, const Grafo& g, int& nodesExplored);
 vector<int> bfs(int inicio, const Grafo& g);
+
 void analisisEstructural(const Grafo& g);
+
+int dijkstra(int inicio, int destino, const Grafo& g,
+             vector<int>& prev, int& nodesExplored);
+vector<int> buildPath(int inicio, int destino, vector<int>& prev);
+void runQueries(const Grafo& g);
 
 #endif
