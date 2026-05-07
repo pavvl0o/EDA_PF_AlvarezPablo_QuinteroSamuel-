@@ -1,4 +1,4 @@
-===== ANÁLISIS ESTRUCTURAL =====
+===== ANALISIS ESTRUCTURAL =====
 Nodos:            1088092
 Aristas:          1541898
 Grado promedio:   2.83413
