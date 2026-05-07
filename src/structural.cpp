@@ -7,14 +7,12 @@ using namespace std;
 
 void analisisEstructural(const Grafo& g) {
 
-    // 1. ESTADÍSTICAS BÁSICAS 
-    cout << "\n===== ANÁLISIS ESTRUCTURAL =====" << endl;
+    cout << "\n===== ANALISIS ESTRUCTURAL =====" << endl;
     cout << "Nodos:             " << g.num_nodos << endl;
     cout << "Aristas:           " << g.num_aristas << endl;
     cout << "Grado promedio:    " 
          << (double)(g.num_aristas * 2) / g.num_nodos << endl;
-
-    // 2. NODO DE MAYOR GRADO 
+ 
     int nodo_mayor = 0;
     int grado_max  = 0;
     for (int i = 0; i < g.num_nodos; i++) {
@@ -25,8 +23,7 @@ void analisisEstructural(const Grafo& g) {
     }
     cout << "Nodo mayor grado:  indice=" << nodo_mayor 
          << " grado=" << grado_max << endl;
-
-    // 3. DIÁMETRO APROXIMADO (BFS desde mayor grado) 
+ 
     cout << "\nCalculando diametro (BFS)..." << endl;
     auto t1 = chrono::high_resolution_clock::now();
     vector<int> dist = bfs(nodo_mayor, g);
@@ -43,8 +40,7 @@ void analisisEstructural(const Grafo& g) {
     cout << "Nodos alcanzados:  " << alcanzados 
          << " (SNAP: 1087562)" << endl;
     cout << "Tiempo BFS:        " << ms << " ms" << endl;
-
-    // 4. COMPONENTES CONEXAS 
+ 
     cout << "\nContando componentes conexas..." << endl;
     vector<bool> visitado(g.num_nodos, false);
     int componentes = 0;
@@ -67,10 +63,9 @@ void analisisEstructural(const Grafo& g) {
     cout << "Componentes:       " << componentes << endl;
     cout << "Mayor componente:  " << mayor_comp 
          << " (SNAP: 1087562)" << endl;
-
-    // 5. GUARDAR RESULTADOS 
+ 
     ofstream out("results/analisis_estructural.txt");
-    out << "===== ANÁLISIS ESTRUCTURAL =====\n";
+    out << "===== ANALISIS ESTRUCTURAL =====\n";
     out << "Nodos:            " << g.num_nodos << "\n";
     out << "Aristas:          " << g.num_aristas << "\n";
     out << "Grado promedio:   " 

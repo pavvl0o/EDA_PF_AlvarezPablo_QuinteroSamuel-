@@ -25,4 +25,6 @@ int dijkstra(int inicio, int destino, const Grafo& g,
 vector<int> buildPath(int inicio, int destino, vector<int>& prev);
 void runQueries(const Grafo& g);
 
+void construirSubgrafo(const Grafo& g);
+
 #endif

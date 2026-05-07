@@ -1,0 +1,6 @@
+===== ANALISIS SUBGRAFO =====
+Nodos:          210
+Aristas:        213
+Peso total MST: 1013
+Aristas MST:    209
+Es DAG:         SI

@@ -12,7 +12,7 @@ int dijkstra(int inicio, int destino, const Grafo& g,
              vector<int>& prev, int& nodesExplored) {
 
     int n = g.adj.size();
-        vector<int> dist(n, INT_MAX);
+        vector<int> dist(n, INT_MAX); 
         prev.assign(n, -1);
 
         priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
@@ -77,7 +77,6 @@ void runQueries(const Grafo& g) {
         int origen  = queries[i].first;
         int destino = queries[i].second;
 
-        // Validar que los nodos existen
         if (g.id_map.count(origen) == 0 || g.id_map.count(destino) == 0) {
             cout << "Q" << (i+1) << ": nodo no existe en el grafo" << endl;
             file << "Q" << (i+1) << "," << origen << "," << destino
@@ -85,7 +84,6 @@ void runQueries(const Grafo& g) {
             continue;
         }
 
-        // Traducir IDs originales a indices internos
         int origen_idx  = g.id_map.at(origen);
         int destino_idx = g.id_map.at(destino);
 
@@ -103,7 +101,6 @@ void runQueries(const Grafo& g) {
         double t_d = chrono::duration<double, milli>(t2 - t1).count();
         double t_b = chrono::duration<double, milli>(t4 - t3).count();
 
-        // Reconstruir camino para Q01 y Q06
         if (i == 0 || i == 5) {
             vector<int> path = buildPath(origen_idx, destino_idx, prev);
             ofstream pathFile("results/path_Q" + to_string(i+1) + ".txt");

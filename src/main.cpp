@@ -14,7 +14,6 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-
     Grafo g;
     cout << "Cargando grafo..." << endl;
     cargarGrafo("data/roadNet-PA.txt", g);
@@ -27,9 +26,11 @@ int main(int argc, char* argv[]) {
     analisisEstructural(g);
       } else if (modulo == "B") {
     runQueries(g);
-      } else {
+      } else if (modulo == "C") {
+    construirSubgrafo(g);
+} 
+      else {
     cout << "Modulo " << modulo << " proximamente..." << endl;
       }
-
     return 0;
 }
