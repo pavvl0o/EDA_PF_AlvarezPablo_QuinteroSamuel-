@@ -24,27 +24,33 @@ BFS, Dijkstra con heap mínimo, Kruskal (MST) y detección de DAG.
 
 ## Estructura del repositorio
 EDA_PF_AlvarezPablo_QuinteroSamuel/
-├── data/
-│   └── roadNet-PA.txt          dataset completo
-├── src/
-│   ├── graph.hpp               estructura Grafo y declaraciones
-│   ├── loader.cpp              carga y parseo del dataset
-│   ├── bfs.cpp                 BFS completo y punto a punto
-│   ├── dijkstra.cpp            Dijkstra con heap y consultas P2P
-│   ├── structural.cpp          estadísticas, diámetro, componentes
-│   ├── subgraph.cpp            subgrafo inducido, MST, DAG
-│   └── main.cpp                CLI: selección de módulo
-├── results/
-│   ├── analisis_estructural.txt   estadísticas vs valores SNAP
-│   ├── consultas_p2p.csv          resultados 10 consultas P2P
-│   ├── path_Q1.txt                camino reconstruido Q01
-│   ├── path_Q6.txt                camino reconstruido Q06
-│   ├── subgrafo_caminos.txt       subgrafo inducido Q01 y Q06
-│   ├── analisis_subgrafo.txt      MST y análisis DAG
-│   └── tiempos.csv                tiempos consolidados por módulo
-├── report/
-│   └── Informe.pdf
-└── README.md
+
+-data/
+--- roadNet-PA.txt               dataset completo
+
+-src/
+--- graph.hpp               estructura Grafo y declaraciones
+--- loader.cpp              carga y parseo del dataset
+--- bfs.cpp                 BFS completo y punto a punto
+--- dijkstra.cpp            Dijkstra con heap y consultas P2P
+--- structural.cpp          estadísticas, diámetro, componentes
+--- subgraph.cpp            subgrafo inducido, MST, DAG
+--- main.cpp                CLI: selección de módulo
+
+-results/
+--- analisis_estructural.txt   estadísticas vs valores SNAP
+--- consultas_p2p.csv          resultados 10 consultas P2P
+--- path_Q1.txt                camino reconstruido Q01
+--- path_Q6.txt                camino reconstruido Q06
+--- subgrafo_caminos.txt       subgrafo inducido Q01 y Q06
+--- analisis_subgrafo.txt      MST y análisis DAG
+--- tiempos.csv                tiempos consolidados por módulo
+
+-report/
+--- Informe.pdf
+
+-README.md
+______________________________________________________________
 
 ## Compilación
 Desde la carpeta raíz del proyecto ejecutar:
