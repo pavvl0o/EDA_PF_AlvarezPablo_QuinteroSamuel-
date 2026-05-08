@@ -1,5 +1,5 @@
 modulo,operacion,tiempo_ms
-general,carga_grafo,1202.23
-A,analisis_estructural_completo,567.621
-B,consultas_dijkstra_bfs_completo,1281.28
-C,subgrafo_mst_dag_completo,16.0594
+general,carga_grafo,1037.25
+A,analisis_estructural_completo,459.332
+B,consultas_dijkstra_bfs_completo,1133.59
+C,subgrafo_mst_dag_completo,17.7699
