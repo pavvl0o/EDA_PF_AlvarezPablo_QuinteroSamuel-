@@ -23,9 +23,6 @@ BFS, Dijkstra con heap mínimo, Kruskal (MST) y detección de DAG.
 - Sistema operativo: Windows, Linux o Mac
 
 ## Estructura del repositorio
-EDA_PF_AlvarezPablo_QuinteroSamuel/
-
-## Estructura del repositorio
 ```
 EDA_PF_AlvarezPablo_QuinteroSamuel/
 ├── data/
